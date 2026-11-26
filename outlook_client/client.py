@@ -11,7 +11,7 @@ class GraphClient:
     """
     Base client for Microsoft Graph API communication.
 
-    Recommended usage is via OutlookClientManager rather than direct instantiation.
+    Recommended usage is via MSGraphClientManager rather than direct instantiation.
     """
 
     DEFAULT_BASE_URL = "https://graph.microsoft.com/v1.0/"

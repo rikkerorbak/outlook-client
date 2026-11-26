@@ -1,5 +1,5 @@
 """
-OutlookClientManager - A facade/factory for Microsoft Graph functionality clients.
+MSGraphClientManager - A facade/factory for Microsoft Graph functionality clients.
 
 Provides a single entry point with lazy-loaded properties for each functionality area.
 """
@@ -9,19 +9,19 @@ from outlook_client.client import GraphClient
 from outlook_client.functionality.mail import MailClient
 
 
-class OutlookClientManager:
+class MSGraphClientManager:
     """
     Manager for unified access to Microsoft Graph functionality clients.
 
     Example:
-        outlook = OutlookClientManager(
+        graph = MSGraphClientManager(
             tenant_id="...",
             client_id="...",
             client_secret="...",
             default_user="user@example.com",
         )
-        messages = outlook.mail.list_messages()
-        outlook.mail.send_mail(
+        messages = graph.mail.list_messages()
+        graph.mail.send_mail(
             to="recipient@example.com",
             subject="Hello",
             body="Sent via Microsoft Graph",
@@ -37,7 +37,7 @@ class OutlookClientManager:
         timeout: float = 30.0,
     ):
         """
-        Initialize the OutlookClientManager.
+        Initialize the MSGraphClientManager.
 
         Args:
             tenant_id: Azure AD / Entra ID tenant ID.

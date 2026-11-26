@@ -11,9 +11,9 @@ class MailClient:
     """
     Client for Microsoft Graph mail operations (reading and sending emails).
 
-    Recommended usage is via OutlookClientManager:
-        outlook.mail.list_messages(...)
-        outlook.mail.send_mail(...)
+    Recommended usage is via MSGraphClientManager:
+        graph.mail.list_messages(...)
+        graph.mail.send_mail(...)
     """
 
     def __init__(self, graph_client: GraphClient, default_user: str | None = None):
@@ -33,7 +33,7 @@ class MailClient:
         if not resolved_user:
             raise ValueError(
                 "A user (email/UPN or user ID) must be provided either on "
-                "OutlookClientManager(default_user=...) or in the method call."
+                "MSGraphClientManager(default_user=...) or in the method call."
             )
         if resolved_user.lower() == "me":
             return "me"

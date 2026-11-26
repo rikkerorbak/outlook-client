@@ -6,7 +6,7 @@ import pytest
 
 from outlook_client.client import GraphClient
 from outlook_client.functionality.mail import MailClient
-from outlook_client.manager import OutlookClientManager
+from outlook_client.manager import MSGraphClientManager
 
 
 @pytest.fixture
@@ -58,8 +58,8 @@ def mail_client_with_recorder(mock_client_factory):
 
 
 @pytest.fixture
-def manager() -> OutlookClientManager:
-    return OutlookClientManager(
+def manager() -> MSGraphClientManager:
+    return MSGraphClientManager(
         tenant_id="test-tenant",
         client_id="test-client-id",
         client_secret="test-secret",

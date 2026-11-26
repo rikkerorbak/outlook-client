@@ -2,14 +2,14 @@
 
 Python client library for Microsoft Graph API, structured after `kmd-nexus-client`, for reading and sending Outlook emails.
 
-Built around OAuth2 client credentials (`authlib` + `httpx`), a unified `OutlookClientManager` facade, and domain functionality clients.
+Built around OAuth2 client credentials (`authlib` + `httpx`), a unified `MSGraphClientManager` facade, and domain functionality clients.
 
 ## Example
 
 ```python
-from outlook_client import OutlookClientManager
+from outlook_client import MSGraphClientManager
 
-outlook = OutlookClientManager(
+outlook = MSGraphClientManager(
     tenant_id="your-tenant-id",
     client_id="your-client-id",
     client_secret="your-client-secret",

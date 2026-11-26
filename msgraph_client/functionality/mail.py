@@ -4,7 +4,7 @@ from urllib.parse import quote
 
 from httpx import HTTPStatusError
 
-from outlook_client.client import GraphClient
+from msgraph_client.client import GraphClient
 
 
 class MailClient:

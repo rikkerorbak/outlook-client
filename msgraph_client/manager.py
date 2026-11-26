@@ -5,8 +5,8 @@ Provides a single entry point with lazy-loaded properties for each functionality
 """
 
 
-from outlook_client.client import GraphClient
-from outlook_client.functionality.mail import MailClient
+from msgraph_client.client import GraphClient
+from msgraph_client.functionality.mail import MailClient
 
 
 class MSGraphClientManager:

@@ -4,9 +4,9 @@ from collections.abc import Callable
 import httpx
 import pytest
 
-from outlook_client.client import GraphClient
-from outlook_client.functionality.mail import MailClient
-from outlook_client.manager import MSGraphClientManager
+from msgraph_client.client import GraphClient
+from msgraph_client.functionality.mail import MailClient
+from msgraph_client.manager import MSGraphClientManager
 
 
 @pytest.fixture

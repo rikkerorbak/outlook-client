@@ -7,7 +7,7 @@ Built around OAuth2 client credentials (`authlib` + `httpx`), a unified `MSGraph
 ## Example
 
 ```python
-from outlook_client import MSGraphClientManager
+from msgraph_client import MSGraphClientManager
 
 outlook = MSGraphClientManager(
     tenant_id="your-tenant-id",
@@ -27,7 +27,7 @@ messages = outlook.mail.list_messages(
 outlook.mail.send_mail(
     to="recipient@example.com",
     subject="Hello from Graph API",
-    body="<p>Sent using <b>outlook-client</b>.</p>",
+    body="<p>Sent using <b>msgraph-client</b>.</p>",
     body_type="HTML",
 )
 ```

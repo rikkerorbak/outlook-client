@@ -1,7 +1,7 @@
 import httpx
 import pytest
 
-from outlook_client.client import GraphClient
+from msgraph_client.client import GraphClient
 
 
 def test_graph_client_requires_credentials():

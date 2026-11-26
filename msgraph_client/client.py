@@ -52,7 +52,7 @@ class GraphClient:
         self.base_url = base_url if base_url.endswith("/") else f"{base_url}/"
         self.scope = scope
 
-        self.logger = logging.getLogger("outlook_client.graph")
+        self.logger = logging.getLogger("msgraph_client.graph")
         logging.getLogger("httpx").setLevel(logging.WARNING)
         logging.getLogger("httpcore").setLevel(logging.WARNING)
 

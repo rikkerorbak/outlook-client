@@ -2,7 +2,7 @@
 Microsoft Graph Outlook Python Client.
 
 Recommended usage:
-    from outlook_client import MSGraphClientManager
+    from msgraph_client import MSGraphClientManager
 
     graph = MSGraphClientManager(
         tenant_id="...",

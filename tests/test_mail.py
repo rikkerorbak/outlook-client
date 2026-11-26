@@ -3,7 +3,7 @@ import base64
 import httpx
 import pytest
 
-from outlook_client.functionality.mail import MailClient
+from msgraph_client.functionality.mail import MailClient
 from tests.conftest import json_body
 
 

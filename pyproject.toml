@@ -1,5 +1,5 @@
 [project]
-name = "outlook-client"
+name = "msgraph-client"
 version = "0.1.0"
 description = "Microsoft Graph API Client for reading and sending Outlook emails"
 readme = "README.md"
@@ -24,10 +24,10 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.sdist]
 include = [
-    "/outlook_client",
+    "/msgraph_client",
     "/README.md",
     "/tests",
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["outlook_client"]
+packages = ["msgraph_client"]
